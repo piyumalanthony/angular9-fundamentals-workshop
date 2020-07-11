@@ -43,6 +43,16 @@
               type="text" name="description"
               [(ngModel)]="selectedCourse.description">
           </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="percentComplete"
+            type="number" name="percentComplete"
+            [(ngModel)]="selectedCourse.percentComplete">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="favorite"
+                   type="text" name="favorite"
+                   [(ngModel)]="selectedCourse.favorite">
+          </mat-form-field>
         </mat-card-content>
         <mat-card-actions>
           <button [disabled]="form.invalid" type="submit" mat-button color="primary">Submit</button>

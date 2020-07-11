@@ -11,7 +11,7 @@ export class CoursesComponent implements OnInit {
   // STEP 02: Updaet the form to show favorite
 
   selectedCourse = null;
-
+  currentCourse = null;
   courses = [
     {
       id: 1,
@@ -45,6 +45,9 @@ export class CoursesComponent implements OnInit {
     };
 
     this.selectedCourse = emptyCourse;
+  }
+  selectCurrentCourse(course){
+    this.currentCourse = course;
   }
 
   selectCourse(course) {
